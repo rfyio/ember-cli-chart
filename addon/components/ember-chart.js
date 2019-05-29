@@ -79,7 +79,6 @@ Chart.elements.Rectangle.prototype.draw = function () {
 
   function cornerAt(index) {
     return corners[(startCorner + index) % 4];
-    3
   }
 
   // Draw rectangle from 'startCorner'
@@ -119,7 +118,6 @@ Chart.elements.Rectangle.prototype.draw = function () {
     ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
     ctx.lineTo(x, y + radius);
     ctx.quadraticCurveTo(x, y, x + radius, y);
-
   }
 
   ctx.fill();
